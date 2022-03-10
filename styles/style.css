@@ -1,0 +1,34 @@
+:root{
+  --clr-primary: #E2F0F9;
+  --clr-secondary: #B0DDE4;
+  --clr-text: #DF4C73;
+  --clr-dark: #286FB4;
+  --clr-white: #FFFFFF;
+  --clr-black: #000;
+}
+body{
+  background-color: var(--clr-primary);
+}
+.container.hero{
+  max-width: 100%;
+}
+.section.dark{
+  color: var(--clr-dark);
+  font-weight: 600;
+}
+.btn.primary{
+  background-color: var(--clr-dark);
+  color: var(--clr-primary);
+}
+.section.light{
+  background-color: var(--clr-dark);
+  color: var(--clr-primary);
+  font-weight: 700;
+}
+.btn.btn-primary{
+  color: var(--clr-dark);
+  border: 2px solid var(--clr-dark)
+}
+section.light .section-title{
+  color: var(--clr-primary);
+}
