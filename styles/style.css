@@ -18,11 +18,11 @@ body{
 }
 .btn.primary{
   background-color: var(--clr-dark);
-  color: var(--clr-primary);
+  color: var(--clr-white);
 }
 .section.light{
   background-color: var(--clr-dark);
-  color: var(--clr-primary);
+  color: var(--clr-white);
   font-weight: 700;
 }
 .btn.btn-primary{
@@ -31,4 +31,11 @@ body{
 }
 section.light .section-title{
   color: var(--clr-primary);
+}
+footer{
+  color: var(--clr-white);
+  font-size:larger;
+}
+a {
+  color: var(--clr-white);
 }
