@@ -155,6 +155,35 @@ h3{
 .social-media{
   margin: 1rem auto;
 }
+/* projects */
+.section-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+}
+.preview h1{
+  font-size: 1.5rem;
+  color: var(--clr-primary)
+}
+.preview{
+  display: grid;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid var(--clr-primary);
+}
+.github{
+  padding: 0rem 1rem;
+  display: inline-block;
+}
+.netlify{
+  padding: 0rem 1rem;
+  display: inline-block;
+}
+
 @media only screen and (min-width:550px){
   .nav-container{
     grid-auto-flow: column;
