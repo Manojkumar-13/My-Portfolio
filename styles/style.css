@@ -127,7 +127,7 @@ img{
   border-radius: 10px;
 }
 footer{
-  background-image: linear-gradient(hsl(232, 47%, 55%),hsl(232, 47%, 30%),hsl(232, 47%, 40%));
+  background-image: linear-gradient(hsl(232, 47%, 40%),hsl(232, 47%, 30%),hsl(232, 47%, 40%));
   color: var(--clr-background);
 }
 .footer-container{
