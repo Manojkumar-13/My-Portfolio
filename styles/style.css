@@ -272,8 +272,10 @@ footer h2{
 /* javascript content */
 .bar-list{
   position: absolute;
+  visibility: hidden;
 }
 .bar-list.show{
+  visibility: visible;
   position: fixed;
   top: 0rem;
   right: 0rem;
