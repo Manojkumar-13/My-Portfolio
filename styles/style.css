@@ -284,7 +284,7 @@ footer h2{
   top: 0rem;
   right: 0rem;
   z-index: 12;
-  background-color:hsl(0, 0%, 90%) ;
+  background-color: rgba(228, 228, 226, 0.8);
   width: 12rem;
   padding: 1rem;
 }
