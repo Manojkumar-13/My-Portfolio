@@ -1,155 +1,262 @@
-
-:root{
-  --clr-primary:#21295C;
-  --clr-secondary:hsl(51, 92%, 20%);
-  --clr-background:hsl(205, 23%, 95%);
-  --clr-option:hsl(620, 75%, 55%);
-}
 *,*::after,*::before{
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   outline: none;
 }
 html{
   font-size: 16px;
 }
-body{
-  background-color: var(--clr-background);
-  color: var(--clr-secondary);
-}
-h1{
-  color: var(--clr-primary);
-  font-size: 2rem;
-  padding: 0.2rem;
-}
-h2{
-  color: var(--clr-option);
-  padding: 0.2rem;
-}
-
 a{
   text-decoration: none;
-  color: var(--clr-background);
-  padding: 0.2rem 0.5rem;
-  margin: 0.5rem;
-  border-radius: 10px;
+  color: black;
+  font-weight: bolder;
 }
-p{
-  font-size: 1.2rem;
-  padding: 0.5rem;
 
+body{
+  background-color: white;
 }
-.navbar{
-  background-image: linear-gradient(hsl(232, 47%, 55%),hsl(232, 47%, 30%));
-  color: var(--clr-background);
+button{
+  background: none;
+  border: none;
+}
+/* nav bar starts*/
+nav{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(228, 228, 226, 0.8);
+
 }
 .nav-container{
-  display: grid;
-  grid-auto-flow: row;
-  text-align: center;
-  background-image: linear-gradient(hsl(232, 47%, 55%),hsl(232, 47%, 30%));
-}
-.left{
-  margin: 1rem;
-  font-size: 2rem;
-}
-.right{
-  margin: 0.5rem
-}
-.home:hover{
-  background-image: linear-gradient(to right,hsl(232, 47%, 95%),hsl(232, 47%, 85%));
-  color:var(--clr-primary);
-  transition: all 0.25s;
-}
-.hero{
-  display: grid;
-  grid-auto-flow: row;
-  margin: 1rem;
-}
-.left-side{
-  margin: 1rem;
-}
-.profile{
-  margin: 1rem; 
-}
-img{
-  width: 100%;
-  border-radius: 50%;
-  border: 4px solid var(--clr-primary);
-  box-shadow: 5px 5px 25px var(--clr-primary);
-}
-.right-side{
-  text-align: center;
-}
-.btn{
-  background-image: linear-gradient(to right,hsl(232, 47%, 55%),hsl(232, 47%, 30%));
-  color: var(--clr-background);
-  display: inline-block;
-  border-radius: 10px;
-  margin: 1rem;
-  box-shadow: 2px 2px 3px hsl(0, 0%, 30%);
-  transition: all 0.25s;
-}
-.btn-resume{
-  padding: 0.3rem 1rem;
-  display: inline-block;
-}
-.btn:hover{
-  opacity: 0.8;
-}
-.btn-projects{
-  padding: 0.2rem 1rem;
-  display: inline-block;
-}
-.btn-blogs{
-  padding: 0.2rem 1.2rem;
-  display: inline-block;
-}
-.skills-container{
-  margin: 1rem;
-  display: grid;
-  text-align: center;
-}
-.skills-container h2{
-  padding-top: 1rem;
-}
-.project-side{
-  background-color:#fff;
-  box-shadow: 5px 5px 10px hsl(205, 23%, 80%) ;
-  margin: 1rem ;
-  border-radius: 10px;
-}
-.blog-side{
-  background-color:#fff;
-  box-shadow: 5px 5px 10px hsl(205, 23%, 80%) ;
-  margin: 1rem;
-  border-radius: 10px;
-}
-footer{
-  background-image: linear-gradient(hsl(232, 47%, 40%),hsl(232, 47%, 30%),hsl(232, 47%, 40%));
-  color: var(--clr-background);
-}
-.footer-container{
-  margin: 0 1rem;
-  display: grid;
-  place-content: center;
-  text-align: center;
-}
-h3{
-  font-size: 1.5rem;
-  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+
 
 }
+/* Nav Logo */
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo-left{
+  font-size: 1.5rem;
+  padding: 0.6rem 0.25rem;
+  border: 3px solid ;
+  border-radius: 50%;
+}
+.name{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.occupation{
+  color: grey;
+  font-size: 1rem;
+}
+/* nav-list */
+.nav-list{
+  display: flex;
+  justify-content: space-between;
+}
+.list{
+  display:none;
+}
+.nav-list i{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.nav-list i:hover{
+  transform: scale(1.1);
+}
+/* nav ends */
+/* hero starts */
+header{
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 7px solid gray;
+  background-image: linear-gradient(to right, white,white,hsl(0, 0%, 90%));
+}
+
+header img{
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+}
+.position{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.hero-container{
+  width: 20rem;
+  margin: 1rem ;
+  padding-top: 3rem;
+}
+h1{
+font-size: 1.5rem;
+padding: 0.5rem;
+}
+h2{
+  font-size: 1rem;
+  padding: 0 0.5rem ;
+}
+p{
+  padding: 0 0.5rem;
+}
+/* buttons */
+.btn{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0.5rem 0;
+  gap: 1rem;
+  font-size: 0.5rem;
+}
+.btn-cta{
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  box-shadow: inset 1px 1px 7px grey;
+}
+.btn-cta:hover{
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+/* about me */
+.container{
+  width: 100%;
+  height: auto;
+  border-bottom: 7px solid gray;}
+.about-container{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.about{
+  padding: 1rem 0;
+}
+/* icons */
+.skill-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 0.5rem;
+  padding: 1rem 0;
+}
+.html{
+  color:#F75421 ;
+}
+.css{
+  color:#2091EB ;
+}
+.js{
+  color: #EFD81D;
+}
+.node{
+  color: #87BF00;
+}
+.react{
+  color: #5ED3F3;
+}
+.skills p{
+  padding-bottom: 1rem;
+}
+/* PROJECTS */
+.container-fluid{
+  width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+.card{
+  width: 20rem;
+  height: 27rem;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+.project-img{
+  width: 17rem;
+  height: 9rem;
+  margin: 1rem auto;
+}
+.project-img img{
+  width: 100%;
+  object-fit: contain;
+}
+.title{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.description{
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+.btn-link{
+  display: block;
+  background-image: linear-gradient(30deg, grey ,white, grey);
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border: 2px solid black;
+  padding: 0.8rem 1.5rem;
+  margin: 1rem ;
+}
+.btn-link:hover{
+  transform: scale(1.1);
+}
+/* footer */
+footer{
+  padding: 2rem;
+  margin: 0 auto;
+}
+.footer-container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.left{
+  width: 100%;
+}
+footer h2{
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.center{
+  text-align: center;
+}
+
 .phone{
-  margin:0.25rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: left;
 }
 .mail{
-  margin:0.25rem;
+  margin: 1rem auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -157,83 +264,129 @@ h3{
 }
 .social-media{
   margin: 1rem auto;
-}
-/* projects */
-.section-container{
   display: flex;
-  flex-wrap: wrap;
-  margin: 1rem auto;
-  gap: 1rem;
   justify-content: center;
-  width: 100%;
-  height: auto;
+  align-items: center;
+  gap: 2rem;
 }
-.preview h1{
+/* javascript content */
+.bar-list{
+  position: absolute;
+}
+.bar-list.show{
+  position: fixed;
+  top: 0rem;
+  right: 0rem;
+  z-index: 12;
+  background-color:hsl(0, 0%, 90%) ;
+  width: 12rem;
+  padding: 1rem;
+}
+ul{
+  list-style: none;
+  font-size: 1.2rem;
+}
+li{
+  margin: 2rem 0;
+  cursor: pointer;
+}
+.close{
+  position: relative;
+}
+.close i{
+  position: absolute;
+  top: 0;
+  left:0;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.close i:hover{
   font-size: 1.5rem;
-  color: var(--clr-primary)
-}
-.preview{
-  display: grid;
-  text-align: center;
-  border-radius: 10px;
-  background-color:#fff;
-  box-shadow: 5px 5px 10px hsl(205, 23%, 80%) ;
-}
-.github{
-  padding: 0rem 1rem;
-  display: inline-block;
-}
-.netlify{
-  padding: 0rem 1rem;
-  display: inline-block;
 }
 
-@media only screen and (min-width:550px){
-  .nav-container{
-    grid-auto-flow: column;
-    align-items: center;
-  }
-  .left{
-    margin: 1rem;
-    font-size: 2rem;
-  }
-  .right a{
-font-size: 1rem;
+@media only screen and (min-width:500px){
+  .hero-container{
+    width: 20rem;
+    margin: 3rem;
   }
   h1{
-    font-size: 3rem;
+  font-size: 1.8rem;
   }
   h2{
-    font-size: 2rem;
+    font-size: 1.2rem;
+  
   }
-  .profile{
-    margin: 3rem; 
+  p{
+    font-size: 1.2rem;
+  }
+  .btn{
+    font-size: 1rem;
+  }
+  .skill-image{
+    font-size: 1rem;
+  }
+  footer h2{
+    text-align: left;
+  }
+  .social-media{
+    justify-content: flex-start;
   }
 }
 @media only screen and (min-width:768px){
-  .hero{
-    grid-auto-flow: column;
-    align-items: center;
+  .nav-container{
+    padding: 1rem 3rem;
+    
   }
-  .right-side{
-    text-align: left;
-    margin: 1rem;
+  .logo-left{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 1rem 0.5rem;
+    border: 5px solid;
+  }
+  .name{
+    font-size: 2.2rem;
+    font-weight: bolder;
+  }
+  .occupation{
+    font-size: 1.5rem;
+  }
+  .list{
+    display:block;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .list:hover{
+    border-radius: 5px;
+    transform: scale(1.1);
+  }
+  .nav-list i{
+    visibility: hidden;
+  }
+  .hero-container{
+    width: 30rem;
+    margin: 5rem;
   }
   h1{
-    font-size: 2rem;
+  font-size: 2.5rem;
+  padding: 0.5rem;
   }
   h2{
     font-size: 1.5rem;
+    padding: 0.5rem;
+  
   }
-  .skills-container{
-    grid-template-columns: 50% 50%;
+  p{
+    font-size: 1.5rem;
+    padding: 0.5rem;
   }
-  .footer-container{
-    margin: 0 3rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    place-content: center;
-    text-align:center;
+  .btn{
+    font-size: 1.2rem;
+    gap: 3rem;
+    padding: 0 0.5rem;
+  }
+  .container-fluid{
+    width: 80%;
   }
   .top{
     margin-bottom: 2rem;
@@ -242,20 +395,45 @@ font-size: 1rem;
   .social-media{
     margin: 3rem 0;
   }
-}
-@media only screen and (min-width:1024px){
-  .profile img{
-    width: 70%;
-  }
-}
-@media only screen and (min-width:1440px){
-  h1{
-    font-size: 3rem;
-  }
-  h2{
+  footer h2{
     font-size: 2rem;
   }
 }
+@media only screen and (min-width:1000px){
+  header{
+    height: 100vh;
+  }
+  .hero-container{
+    width: 35rem;
+    margin: 5rem;
+    padding-top: 5rem;
+  }
+  h1{
+  font-size: 3rem;
+  padding: 1rem;
+  }
+  h2{
+    font-size: 1.7rem;
+  }
+  .btn{
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+  .about-container{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .container-fluid{
+    width: 70%;
+  }
 
-
+}
+@media only screen and (min-width:1440px){
+  .hero{
+  margin: 5rem;
+  }
+.hero-container{
+  transform: scale(1.2);
+}
+}
 
