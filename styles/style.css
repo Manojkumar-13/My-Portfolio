@@ -113,6 +113,13 @@ h2{
 p{
   padding: 0 0.5rem;
 }
+.gitlink{
+  background-color: hsl(0, 0%, 95%);
+  padding: 0.2rem;
+}
+.gitlink:hover{
+  opacity: 0.5;
+}
 /* buttons */
 .btn{
   display: flex;
